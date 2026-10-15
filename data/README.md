@@ -12,18 +12,18 @@ The numbered held-out files are separate batches inherited from the Schema V3 pr
 
 | File | Examples | Purpose |
 |---|---:|---|
-| `train_set.jsonl` | 3,478 | Training practice; 1,738 normalized unique commands, with intentional repeats to give selected examples more weight. |
+| `train_set.jsonl` | 3,720 | Training practice; 1,892 normalized unique commands, with intentional repeats to give selected examples more weight. |
 | `eval_set.jsonl` | 150 | Main evaluation: core57 (57), ext (51), and ext2 (42). Despite its name, this is only part of the full evaluation. |
 | `heldout_set.jsonl` | 201 | Evaluation groups labeled familiar (128), contested (44), and novel (30). “Familiar” is a group name, not permission to train on these rows. |
 | `heldout2_set.jsonl` | 80 | Additional evaluation batch labeled heldout2. |
 | `heldout3_set.jsonl` | 84 | Additional evaluation batch labeled heldout3. |
 | `heldout4_set.jsonl` | 50 | Additional evaluation batch labeled heldout4. |
 | `heldout5_set.jsonl` | 52 | Additional evaluation batch labeled heldout5. |
-| `heldout6_set.jsonl` | 56 | Region and route cases: staying in halves/quadrants, temporary restrictions, avoidance, and pathways. |
+| `heldout6_set.jsonl` | 52 | Region and route cases: staying in halves/quadrants, temporary restrictions, avoidance, and pathways. |
 | `heldout7_set.jsonl` | 63 | New stay-region wording and distinctions such as pause versus abort, abort versus return, and resume versus retry. Also includes avoidance, chip-reading, and negative route wording. |
 | `heldout8_set.jsonl` | 51 | Stop wording, positive/negative wording pairs, resume/retry distinctions, and control examples. |
 | `heldout9_set.jsonl` | 99 | Fresh set written by a different model than the training data and never trained on: indirect target locations, avoid idioms, inverted stay wording, corrections. Scores here run ~20 points below the older sets. |
-| **All evaluation files** | **886** | The published accuracy tables predate heldout9 and five ambiguous-label removals, and use 792. |
+| **All evaluation files** | **882** | The published accuracy tables predate heldout9, five ambiguous-label removals and four self-answered question rows, and use 792. |
 
 ## Why there are no paragraphs at the top of the data files
 
