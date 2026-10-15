@@ -12,7 +12,7 @@ The numbered held-out files are separate batches inherited from the Schema V3 pr
 
 | File | Examples | Purpose |
 |---|---:|---|
-| `train_set.jsonl` | 3,720 | Training practice; 1,892 normalized unique commands, with intentional repeats to give selected examples more weight. |
+| `train_set.jsonl` | 3,855 | Training practice; 1,986 normalized unique commands, with intentional repeats to give selected examples more weight. |
 | `eval_set.jsonl` | 150 | Main evaluation: core57 (57), ext (51), and ext2 (42). Despite its name, this is only part of the full evaluation. |
 | `heldout_set.jsonl` | 201 | Evaluation groups labeled familiar (128), contested (44), and novel (30). “Familiar” is a group name, not permission to train on these rows. |
 | `heldout2_set.jsonl` | 80 | Additional evaluation batch labeled heldout2. |
