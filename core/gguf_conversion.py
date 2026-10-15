@@ -241,4 +241,4 @@ def convert(args):
     write_json(manifest, info)
     print(json.dumps(info, indent=2))
     print("Created:", output)
-    print("Next: benchmark all 792 V3 examples before judging the converted model.")
+    print("Next: benchmark every V3 evaluation example before judging the converted model.")

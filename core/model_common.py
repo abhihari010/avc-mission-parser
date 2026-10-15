@@ -24,7 +24,7 @@ LFM_MODELS = {"lfm350"}
 JSON_TOOL_MODELS = {"granite350"}
 MAX_NEW_TOKENS = 256
 ENUMS = {f: FUNCTION_SCHEMA["function"]["parameters"]["properties"][f]["enum"] for f in FIELDS}
-EVAL_FILES = ["eval_set.jsonl", "heldout_set.jsonl"] + [f"heldout{i}_set.jsonl" for i in range(2, 9)]
+EVAL_FILES = ["eval_set.jsonl", "heldout_set.jsonl"] + [f"heldout{i}_set.jsonl" for i in range(2, 10)]
 
 
 def sha256(path):
